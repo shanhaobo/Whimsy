@@ -10,34 +10,9 @@ namespace wms
     {
         namespace Provider
         {
-            WMS_CLASS
+            WMS_CLASS : public ::wms::Cmpnt::type
             {
             protected:
-                struct tIDPair
-                {
-                    ID32::type              m_AttrID;
-                    ID32::type              m_ReqID;
-
-                    WIZ_INLINE Bool::type operator==(tIDPair const & inOther) const
-                    {
-                        if (m_AttrID != inOther.m_AttrID)
-                        {
-                            return Bool::False;
-                        }
-                        return m_ReqID == inOther.m_ReqID;
-                    }
-
-                    tIDPair() : m_AttrID(ID32::Invalid), m_ReqID(ID32::Invalid)
-                    {
-
-                    }
-                    tIDPair(ID32::in inAttrID, ID32::in inReqID) : m_AttrID(inAttrID), m_ReqID(inReqID)
-                    {
-
-                    }
-                };
-                typedef Array<tIDPair>::type           tIDPairList;
-
                 struct tRequestItem
                 {
                     ID32::type                  m_AttrID;
@@ -50,25 +25,43 @@ namespace wms
                 };
                 typedef Array<tRequestItem>::type           tRequestList;
 
+                /// ÐèÇóÊµÀý
                 struct tRequestInstantItem
                 {
+                    struct tIDPair
+                    {
+                        ID32::type              m_AttrID;
+                        ID32::type              m_ReqID;
+
+                        WIZ_INLINE Bool::type operator==(tIDPair const & inOther) const
+                        {
+                            if (m_AttrID != inOther.m_AttrID)
+                            {
+                                return Bool::False;
+                            }
+                            return m_ReqID == inOther.m_ReqID;
+                        }
+
+                        tIDPair() : m_AttrID(ID32::Invalid), m_ReqID(ID32::Invalid)
+                        {
+
+                        }
+                        tIDPair(ID32::in inAttrID, ID32::in inReqID) : m_AttrID(inAttrID), m_ReqID(inReqID)
+                        {
+
+                        }
+                    };
+                    typedef Array<tIDPair>::type           tIDPairList;
+
                     Attr::Manager::ptr          m_AttrManagerPtr;
                     tIDPairList                 m_RequestIDList;
 
-                    WIZ_INLINE Bool::type operator==(tRequestInstantItem const & inOther) const
-                    {
-                        if (m_AttrManagerPtr != inOther.m_AttrManagerPtr)
-                        {
-                            return Bool::False;
-                        }
+                    Bool::type operator==(tRequestInstantItem const & inOther) const;
 
-                        return m_RequestIDList == inOther.m_RequestIDList;
-                    }
+                    tRequestInstantItem();
 
-                    tRequestInstantItem() : m_AttrManagerPtr(WIZ_NULLPTR)
-                    {
-
-                    }
+                    Void::type AttachTo(Attr::Manager::ptr, tRequestList const &);
+                    Void::type Detach();
                 };
                 typedef List<tRequestInstantItem>::type    tRequestInstantList;
 
@@ -82,10 +75,6 @@ namespace wms
                 Void::type Detach(Attr::Manager::ptr);
                 Void::type DetachAll();
                 Bool::type Reattach(Attr::Manager::ptr);
-
-            protected:
-                Void::type AttachAllRequest(tRequestInstantItem&);
-                Void::type DetachAllRequest(tRequestInstantItem&);
 
             protected:
                 tRequestList                m_RequestList;
