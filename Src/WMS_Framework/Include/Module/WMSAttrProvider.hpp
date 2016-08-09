@@ -69,6 +69,9 @@ namespace wms
                     {
 
                     }
+
+                    Void::type AttachTo(Attr::Manager::ptr, tRequestList const &);
+                    Void::type Detach();
                 };
                 typedef List<tRequestInstantItem>::type    tRequestInstantList;
 
@@ -82,10 +85,6 @@ namespace wms
                 Void::type Detach(Attr::Manager::ptr);
                 Void::type DetachAll();
                 Bool::type Reattach(Attr::Manager::ptr);
-
-            protected:
-                Void::type AttachAllRequest(tRequestInstantItem&);
-                Void::type DetachAllRequest(tRequestInstantItem&);
 
             protected:
                 tRequestList                m_RequestList;
