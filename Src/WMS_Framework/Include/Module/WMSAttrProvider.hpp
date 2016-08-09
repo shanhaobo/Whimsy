@@ -84,8 +84,8 @@ namespace wms
                 Bool::type Reattach(Attr::Manager::ptr);
 
             protected:
-                Void::type AttachAllRequest(tIDPairList& outIDPairList, Attr::Manager::ptr);
-                Void::type DetachAllRequest(tIDPairList& outIDPairList, Attr::Manager::ptr);
+                Void::type AttachAllRequest(tRequestInstantItem&);
+                Void::type DetachAllRequest(tRequestInstantItem&);
 
             protected:
                 tRequestList                m_RequestList;
