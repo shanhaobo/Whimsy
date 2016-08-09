@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Private">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Include\Core">
+      <UniqueIdentifier>{a35acfcd-51a5-4b01-b977-7ab0c596fc6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Core">
+      <UniqueIdentifier>{b7c56ec7-0d63-41fc-8207-97b1e8b92378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\System">
+      <UniqueIdentifier>{0f9f3ddc-26db-4af3-8691-53f7dfce8f63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Module">
+      <UniqueIdentifier>{0738caf1-dc2f-487e-b10e-29e151f6e560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Module\Behavior Module">
+      <UniqueIdentifier>{d926eac9-76f9-4f84-b47a-a14a575a0a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Module\Attribute Module">
+      <UniqueIdentifier>{f983cd6f-d7d8-49ad-afde-491bd62a1958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Module">
+      <UniqueIdentifier>{b9d8c75c-29b9-48d1-903a-32e76bd6306c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Module\Attribute Module">
+      <UniqueIdentifier>{2b41d6db-4394-453b-bc23-d2a8006f96bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Module\Behavior Module">
+      <UniqueIdentifier>{d88360eb-8cf4-472c-83c6-000fae471c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\System\Skill System">
+      <UniqueIdentifier>{924cd777-7dff-45d1-9dda-3554f4019b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\System\Weapon System">
+      <UniqueIdentifier>{4326063c-6fc9-489f-8375-a86efde45aa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\System">
+      <UniqueIdentifier>{16249790-789e-42aa-8058-3169c1deb94f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\System\Weapon System">
+      <UniqueIdentifier>{b58d2874-a492-40fd-b9e3-102fefc0a6ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Core\WMSFrmwrkActor.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Core\WMSFrmwrkFwdDclr.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttribute.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrModifier.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrModule.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSBehavior.hpp">
+      <Filter>Include\Module\Behavior Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSBhvrModule.hpp">
+      <Filter>Include\Module\Behavior Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\System\Weapon\WMSWSAttackModule.hpp">
+      <Filter>Include\System\Weapon System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\System\Weapon\WMSWSWeapon.hpp">
+      <Filter>Include\System\Weapon System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrModifierT.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttributeT.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrProvider.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrRequest.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrRequestT.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrManager.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Core\WMSFrmwrkActor.cpp">
+      <Filter>Private\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttribute.cpp">
+      <Filter>Private\Module\Attribute Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttrModule.cpp">
+      <Filter>Private\Module\Attribute Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSBehavior.cpp">
+      <Filter>Private\Module\Behavior Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSBhvrModule.cpp">
+      <Filter>Private\Module\Behavior Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_Framework\Private\System\Weapon\WMSWSAttackModule.cpp">
+      <Filter>Private\System\Weapon System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttrModifier.cpp">
+      <Filter>Private\Module\Attribute Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttrProvider.cpp">
+      <Filter>Private\Module\Attribute Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttrManager.cpp">
+      <Filter>Private\Module\Attribute Module</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

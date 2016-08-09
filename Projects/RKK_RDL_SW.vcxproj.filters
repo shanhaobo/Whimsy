@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\RKK_RDL\SW\RKKRDL_SW.cpp" />
+    <ClCompile Include="..\Src\RKK_RDL\SW\RKKRDL_SW_Device.cpp" />
+    <ClCompile Include="..\Src\RKK_RDL\SW\RKKRDL_SW_Plugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\RKK_RDL\SW\RKKRDL_SW.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\RKK_RDL\SW\RKKRDL_SW_Device.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

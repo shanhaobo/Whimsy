@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\WMS_Framework\Include\Core\WMSFrmwrkActor.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Core\WMSFrmwrkFwdDclr.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttribute.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttributeT.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrManager.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrModifier.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrModifierT.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrModule.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrProvider.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrRequest.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSAttrRequestT.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSBehavior.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\Module\WMSBhvrModule.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\System\Weapon\WMSWSAttackModule.hpp" />
+    <ClInclude Include="..\Src\WMS_Framework\Include\System\Weapon\WMSWSWeapon.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\WMS_Framework\Private\Core\WMSFrmwrkActor.cpp" />
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttribute.cpp" />
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttrManager.cpp" />
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttrModifier.cpp" />
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttrModule.cpp" />
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSAttrProvider.cpp" />
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSBehavior.cpp" />
+    <ClCompile Include="..\Src\WMS_Framework\Private\Module\WMSBhvrModule.cpp" />
+    <ClCompile Include="..\Src\WMS_Framework\Private\System\Weapon\WMSWSAttackModule.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9CD5B846-64BC-46BC-B9BD-0B0368F4E406}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Whimsy</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Output\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)\Output\Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\Output\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{4d63ee25-5afc-4e78-adbd-4e60afabfd5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private">
+      <UniqueIdentifier>{16b877b9-9e2e-4ae0-9383-510af52f2970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Core">
+      <UniqueIdentifier>{461359fe-feb3-4c64-831c-4523e1668312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Core">
+      <UniqueIdentifier>{82a816d1-38f3-4b4b-bf2f-b03e402abbad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\ANN_Library\Include\Core\ANNCore.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\ANN_Library\Include\Core\ANNCoreFwdDclr.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\ANN_Library\Include\Core\ANNCoreNeuron.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\ANN_Library\Include\Core\ANNCoreLayer.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\ANN_Library\Include\Core\ANNCoreNetwork.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\ANN_Library\Include\Core\ANNCoreStorage.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\ANN_Library\Private\Core\ANNCoreLayer.cpp">
+      <Filter>Private\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\ANN_Library\Private\Core\ANNCoreNeuron.cpp">
+      <Filter>Private\Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\WIZ_Library\Include\00_Config\WizConfig.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\00_Config\WizCustomConfig.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPP.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPBitOp.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPBool.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPCombine.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPDec.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPIf.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPInc.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPLoop.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPRepeatFile.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPStringize.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPTupleElem.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicType.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeBool.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeChar.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeDeclareHelper.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeDeclareUtils.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeID.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeInt.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeMisc.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeReal.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeSize.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeString.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\02_MU\WizBasicMU.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\02_MU\WizBasicMUAssert.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\02_MU\WizBasicMURTTI.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\03_TT\WizBasicTT.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\03_TT\WizBasicTTBool.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\03_TT\WizBasicTTIF.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\03_TT\WizBasicTTIsSame.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUBit.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCallProxy.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUMisc.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUNoncopyable.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTU.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCast.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCastForce.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCastLexical.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCastStatic.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUSingleton.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUTypeList.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMem.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemAllocator.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemAllocatorBase.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemAllocatorDefault.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemAllocatorSTLBase.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemObj.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemRecorder.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainer.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerArray.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerBase.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerDeque.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerList.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerMap.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerMultiMap.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerSet.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvInitializerList.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Function\WizAdvFunction.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Function\WizAdvFunctionInvoker.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Function\WizAdvFunctionMemFunc.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Function\WizAdvFunctionTemplate.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Graph\WizAdvGraph.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Graph\WizAdvGraphForwardDeclare.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Graph\WizAdvGraphLink.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Graph\WizAdvGraphNode.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvFixedString.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvHashString.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvHashStringTable.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvString.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvHashStringProxy.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\WizAdvEnum.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\WizAdvType.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\WizAdvBitsfield.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandom.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandomCore.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandomEngine.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandomEngine_C.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandomEngine_HC.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\TimerUtils\WizTimer.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\TimerUtils\WizTimerFrame.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\TimerUtils\WizTimerHighRes.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\WizUtils.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtils.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsCompare.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsInterpolator.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsMinMax.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsMisc.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsOne.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsZero.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22Base.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22ColMajorMethod.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22RowMajorMethod.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33Base.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33ColMajorMethod.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33RowMajorMethod.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector2.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector2Base.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector2Method.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector3.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector3Base.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector3Method.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector4.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector4Base.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector4Method.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\05_DP\Visitor\WizDPVisitable.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\05_DP\Visitor\WizDPVisitor.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\05_DP\Visitor\WizDPVisitorTemplate.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTI.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataBasic.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataClass.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataField.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataFunction.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataProperty.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataStruct.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\Wiz.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Include\WizCustomDeclareHelper.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexAutomaton.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexBaseType.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexExpression.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexExpressionBase.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexExpressionVisitor.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexState.hpp" />
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexTransition.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22ColMajorMethod.inl" />
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22RowMajorMethod.inl" />
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33ColMajorMethod.inl" />
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33RowMajorMethod.inl" />
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector2Method.inl" />
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector3Method.inl" />
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector4Method.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\DevTips_Container.txt" />
+    <Text Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\SmartPtr\DevTips_SmartPtr.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\WIZ_Library\Private\01_Basic\05_Mem\WizBasicMemRecorder.cpp" />
+    <ClCompile Include="..\Src\WIZ_Library\Private\03_Utils\TimerUtils\WizTimerFrame.cpp" />
+    <ClCompile Include="..\Src\WIZ_Library\Private\03_Utils\TimerUtils\WizTimerHighRes.cpp" />
+    <ClCompile Include="..\Src\WIZ_Library\Private\Regex\WizRegexAutomaton.cpp" />
+    <ClCompile Include="..\Src\WIZ_Library\Private\Regex\WizRegexExpressionVisitor.cpp" />
+    <ClCompile Include="..\Src\WIZ_Library\Private\RTTI\WizRTTIMetaDataField.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D97800BC-87E5-42CD-A999-B99A4E5B1244}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WIZ_Library</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Output\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Output\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

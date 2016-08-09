@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{286871af-dc5a-43d2-b775-c21b610a5d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\00_Config">
+      <UniqueIdentifier>{958f0c01-3cab-43ae-b1a8-64849d9e1e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic">
+      <UniqueIdentifier>{c8c269c0-7f24-4012-89bf-bc1376f5c3e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic\01_Type">
+      <UniqueIdentifier>{d8c500a2-7704-441d-90e7-0d9925591b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic\00_MPP%28MacroPreprocesssor%29">
+      <UniqueIdentifier>{815d4eab-ef16-4457-9b11-83547072b547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\03_Utils">
+      <UniqueIdentifier>{54af974b-3083-4f3f-a2f8-add195150289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\04_Math">
+      <UniqueIdentifier>{fae47f77-7c90-415e-9472-23e7c98a53f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\03_Utils\TimerUtils">
+      <UniqueIdentifier>{800051ff-86ba-4d87-baac-1bce8586223f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic\02_MU%28MacroUtils%29">
+      <UniqueIdentifier>{eb9191b3-210b-4d1e-bf7e-cfb0692bf768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\04_Math\01_Basic">
+      <UniqueIdentifier>{48cdda63-c83a-47b5-8a58-d950fa8c3290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\04_Math\01_Basic\Vector">
+      <UniqueIdentifier>{5cecc1d0-09c8-4f50-8fcc-ca4d766ed8ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\04_Math\01_Basic\Matrix">
+      <UniqueIdentifier>{a2edd288-8cef-42b7-b08f-7060b535a5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\04_Math\00_Utils">
+      <UniqueIdentifier>{b0e3b74b-5d02-4000-85a0-16ddb3a3a803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic\04_TU%28TemplateUtils%29">
+      <UniqueIdentifier>{e5e5a4cb-d5c0-4167-b8ac-4e8a60a1f9cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic\04_TU%28TemplateUtils%29\Cast">
+      <UniqueIdentifier>{ede04999-5cb0-4452-b36c-e2465e60b9c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic\03_TT%28TypeTraits%29">
+      <UniqueIdentifier>{07d5db69-e505-47e3-b243-fb6fd72f99e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29">
+      <UniqueIdentifier>{901430da-89cc-47b9-9ff3-d8fbdb210674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29\01_Type">
+      <UniqueIdentifier>{d4c19272-d869-4567-9fec-e88acfafffb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29\01_Type\SmartPtr">
+      <UniqueIdentifier>{bf6a3078-b2b6-4f76-b4a0-84e1e1e865e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29\01_Type\Container">
+      <UniqueIdentifier>{0f06ca53-e474-4d09-8851-6160c42a4284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic\05_Mem">
+      <UniqueIdentifier>{a98eaa99-ab5a-4218-bba5-4290fb618a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\01_Basic\05_Mem\Allocator">
+      <UniqueIdentifier>{5a4290bd-10ac-41e2-8b1b-7539cf9aaf1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private">
+      <UniqueIdentifier>{87a0efdd-0291-4eae-ae21-5218d6c01bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\01_Basic">
+      <UniqueIdentifier>{090316bc-4a89-400b-803f-66e60c4c2467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\01_Basic\05_Mem">
+      <UniqueIdentifier>{21aef6e8-4e59-45ab-b784-d0b2f5e4d072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29\01_Type\String">
+      <UniqueIdentifier>{552f111a-3cda-4c49-a8f2-40fb9f10c25e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29\01_Type\String\HashString">
+      <UniqueIdentifier>{0e96431e-1f0c-4209-855d-847607805dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\03_Utils">
+      <UniqueIdentifier>{a6a67431-2325-4491-b5ba-682b89506765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\03_Utils\TimerUtils">
+      <UniqueIdentifier>{03aa979e-f58d-4d3c-94fd-cde3587da56b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29\02_MU">
+      <UniqueIdentifier>{de989f6e-19aa-4ca1-b4d3-6264863c3950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Regex">
+      <UniqueIdentifier>{e2ec650e-709d-4c01-8838-0c92e37a281d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\05_DP%28Design Pattern%29">
+      <UniqueIdentifier>{ba05d1a9-0347-4d02-b906-0d32878da6bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\05_DP%28Design Pattern%29\Visitor">
+      <UniqueIdentifier>{7be37e82-4c30-44e0-9f6c-b0963935cf0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29\01_Type\Graph">
+      <UniqueIdentifier>{7f6cc97e-36f8-4a03-86ff-7a01294fa61f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\02_Adv%28Advanced%29\01_Type\Function">
+      <UniqueIdentifier>{63931029-0eae-4b2d-9e0b-f94424da17bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\RTTI%28Run-Time Type Information%29">
+      <UniqueIdentifier>{9f274f9e-82bc-4227-8b36-67df102a9267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\RTTI%28Run-Time Type Information%29">
+      <UniqueIdentifier>{8ae91768-f51d-4347-b416-087e284be2c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\03_Utils\Random">
+      <UniqueIdentifier>{9d090f27-a184-4ccb-89db-f17effaa364c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\03_Utils\Random\Engine">
+      <UniqueIdentifier>{15388f86-441b-4aa8-83e9-2770e67788d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\WIZ_Library\Include\00_Config\WizConfig.hpp">
+      <Filter>Include\00_Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\00_Config\WizCustomConfig.hpp">
+      <Filter>Include\00_Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeBool.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeChar.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeDeclareUtils.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeInt.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeReal.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPBitOp.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPBool.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPCombine.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPDec.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPIf.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPInc.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPLoop.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPRepeatFile.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPStringize.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPPTupleElem.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\00_MPP\WizBasicMPP.hpp">
+      <Filter>Include\01_Basic\00_MPP%28MacroPreprocesssor%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicType.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeDeclareHelper.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeSize.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\02_MU\WizBasicMU.hpp">
+      <Filter>Include\01_Basic\02_MU%28MacroUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector2.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector2Base.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector2Method.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsInterpolator.hpp">
+      <Filter>Include\04_Math\00_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtils.hpp">
+      <Filter>Include\04_Math\00_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsCompare.hpp">
+      <Filter>Include\04_Math\00_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsMinMax.hpp">
+      <Filter>Include\04_Math\00_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsOne.hpp">
+      <Filter>Include\04_Math\00_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsZero.hpp">
+      <Filter>Include\04_Math\00_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\00_Utils\WizMathUtilsMisc.hpp">
+      <Filter>Include\04_Math\00_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\03_TT\WizBasicTT.hpp">
+      <Filter>Include\01_Basic\03_TT%28TypeTraits%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\03_TT\WizBasicTTBool.hpp">
+      <Filter>Include\01_Basic\03_TT%28TypeTraits%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\03_TT\WizBasicTTIF.hpp">
+      <Filter>Include\01_Basic\03_TT%28TypeTraits%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\03_TT\WizBasicTTIsSame.hpp">
+      <Filter>Include\01_Basic\03_TT%28TypeTraits%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCast.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29\Cast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCastForce.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29\Cast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCastLexical.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29\Cast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCastStatic.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29\Cast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTU.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\WizUtils.hpp">
+      <Filter>Include\03_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\WizAdvType.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemObj.hpp">
+      <Filter>Include\01_Basic\05_Mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemAllocatorBase.hpp">
+      <Filter>Include\01_Basic\05_Mem\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemRecorder.hpp">
+      <Filter>Include\01_Basic\05_Mem\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMem.hpp">
+      <Filter>Include\01_Basic\05_Mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemAllocator.hpp">
+      <Filter>Include\01_Basic\05_Mem\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemAllocatorDefault.hpp">
+      <Filter>Include\01_Basic\05_Mem\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\05_Mem\WizBasicMemAllocatorSTLBase.hpp">
+      <Filter>Include\01_Basic\05_Mem\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeString.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainer.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerArray.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerBase.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerDeque.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerList.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerMap.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerMultiMap.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvContainerSet.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvFixedString.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvString.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\WizCustomDeclareHelper.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\Wiz.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvHashStringTable.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\String\HashString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvHashStringProxy.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\String\HashString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\String\WizAdvHashString.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\String\HashString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\TimerUtils\WizTimerHighRes.hpp">
+      <Filter>Include\03_Utils\TimerUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\TimerUtils\WizTimerFrame.hpp">
+      <Filter>Include\03_Utils\TimerUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeMisc.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUNoncopyable.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUSingleton.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUMisc.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUCallProxy.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\05_DP\Visitor\WizDPVisitor.hpp">
+      <Filter>Include\05_DP%28Design Pattern%29\Visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\05_DP\Visitor\WizDPVisitorTemplate.hpp">
+      <Filter>Include\05_DP%28Design Pattern%29\Visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUTypeList.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Graph\WizAdvGraph.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Graph\WizAdvGraphForwardDeclare.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Graph\WizAdvGraphLink.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Graph\WizAdvGraphNode.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexAutomaton.hpp">
+      <Filter>Private\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexBaseType.hpp">
+      <Filter>Private\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexExpression.hpp">
+      <Filter>Private\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexExpressionVisitor.hpp">
+      <Filter>Private\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexState.hpp">
+      <Filter>Private\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexTransition.hpp">
+      <Filter>Private\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\05_DP\Visitor\WizDPVisitable.hpp">
+      <Filter>Include\05_DP%28Design Pattern%29\Visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Function\WizAdvFunctionInvoker.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Function\WizAdvFunctionMemFunc.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Function\WizAdvFunctionTemplate.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Function\WizAdvFunction.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\02_MU\WizBasicMURTTI.hpp">
+      <Filter>Include\01_Basic\02_MU%28MacroUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\04_TU\WizBasicTUBit.hpp">
+      <Filter>Include\01_Basic\04_TU%28TemplateUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\WizAdvBitsfield.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\WizAdvEnum.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTI.hpp">
+      <Filter>Include\RTTI%28Run-Time Type Information%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataBasic.hpp">
+      <Filter>Include\RTTI%28Run-Time Type Information%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataClass.hpp">
+      <Filter>Include\RTTI%28Run-Time Type Information%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataField.hpp">
+      <Filter>Include\RTTI%28Run-Time Type Information%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataFunction.hpp">
+      <Filter>Include\RTTI%28Run-Time Type Information%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataProperty.hpp">
+      <Filter>Include\RTTI%28Run-Time Type Information%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\RTTI\WizRTTIMetaDataStruct.hpp">
+      <Filter>Include\RTTI%28Run-Time Type Information%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Private\Regex\WizRegexExpressionBase.hpp">
+      <Filter>Private\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector3.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector3Base.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector3Method.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector4.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector4Base.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector4Method.hpp">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22.hpp">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22Base.hpp">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22ColMajorMethod.hpp">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22RowMajorMethod.hpp">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33.hpp">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33Base.hpp">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33ColMajorMethod.hpp">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33RowMajorMethod.hpp">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\WizAdvInitializerList.hpp">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandom.hpp">
+      <Filter>Include\03_Utils\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandomCore.hpp">
+      <Filter>Include\03_Utils\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandomEngine.hpp">
+      <Filter>Include\03_Utils\Random\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandomEngine_C.hpp">
+      <Filter>Include\03_Utils\Random\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\Random\WizRandomEngine_HC.hpp">
+      <Filter>Include\03_Utils\Random\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\03_Utils\TimerUtils\WizTimer.hpp">
+      <Filter>Include\03_Utils\TimerUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\02_MU\WizBasicMUAssert.hpp">
+      <Filter>Include\01_Basic\02_MU%28MacroUtils%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WIZ_Library\Include\01_Basic\01_Type\WizBasicTypeID.hpp">
+      <Filter>Include\01_Basic\01_Type</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector2Method.inl">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </None>
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector3Method.inl">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </None>
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Vector\WizMathVector4Method.inl">
+      <Filter>Include\04_Math\01_Basic\Vector</Filter>
+    </None>
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22ColMajorMethod.inl">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </None>
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix22RowMajorMethod.inl">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </None>
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33ColMajorMethod.inl">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </None>
+    <None Include="..\Src\WIZ_Library\Include\04_Math\01_Basic\Matrix\WizMathMatrix33RowMajorMethod.inl">
+      <Filter>Include\04_Math\01_Basic\Matrix</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\Container\DevTips_Container.txt">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\Container</Filter>
+    </Text>
+    <Text Include="..\Src\WIZ_Library\Include\02_Adv\01_Type\SmartPtr\DevTips_SmartPtr.txt">
+      <Filter>Include\02_Adv%28Advanced%29\01_Type\SmartPtr</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\WIZ_Library\Private\01_Basic\05_Mem\WizBasicMemRecorder.cpp">
+      <Filter>Private\01_Basic\05_Mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WIZ_Library\Private\03_Utils\TimerUtils\WizTimerHighRes.cpp">
+      <Filter>Private\03_Utils\TimerUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WIZ_Library\Private\03_Utils\TimerUtils\WizTimerFrame.cpp">
+      <Filter>Private\03_Utils\TimerUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WIZ_Library\Private\Regex\WizRegexAutomaton.cpp">
+      <Filter>Private\Regex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WIZ_Library\Private\Regex\WizRegexExpressionVisitor.cpp">
+      <Filter>Private\Regex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WIZ_Library\Private\RTTI\WizRTTIMetaDataField.cpp">
+      <Filter>Private\RTTI%28Run-Time Type Information%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
