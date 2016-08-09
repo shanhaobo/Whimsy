@@ -1,0 +1,6 @@
+*.v12.suo
+*.v14.suo
+*.sdf
+*.opensdf
+/Output
+/Samples/Output

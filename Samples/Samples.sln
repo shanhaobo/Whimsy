@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample001", "Sample001\Sample001.vcxproj", "{6F7C57CC-0289-4365-9A00-83F59D0FA1C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{42AAF250-61F0-406F-A202-DF2AF08ACC2C}"
+	ProjectSection(SolutionItems) = preProject
+		SampleBase.hpp = SampleBase.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Eigen", "Eigen", "{D21252BD-33E8-44BE-842D-E5C8357692C7}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Array.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Array.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ArrayBase.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ArrayBase.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ArrayWrapper.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ArrayWrapper.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Assign.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Assign.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Assign_MKL.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Assign_MKL.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\BandMatrix.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\BandMatrix.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Block.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Block.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\BooleanRedux.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\BooleanRedux.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CMakeLists.txt = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CMakeLists.txt
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CommaInitializer.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CommaInitializer.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CoreIterators.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CoreIterators.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CwiseBinaryOp.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CwiseBinaryOp.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CwiseNullaryOp.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CwiseNullaryOp.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CwiseUnaryOp.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CwiseUnaryOp.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CwiseUnaryView.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\CwiseUnaryView.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DenseBase.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DenseBase.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DenseCoeffsBase.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DenseCoeffsBase.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DenseStorage.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DenseStorage.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Diagonal.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Diagonal.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DiagonalMatrix.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DiagonalMatrix.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DiagonalProduct.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\DiagonalProduct.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Dot.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Dot.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\EigenBase.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\EigenBase.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Flagged.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Flagged.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ForceAlignedAccess.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ForceAlignedAccess.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Functors.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Functors.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Fuzzy.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Fuzzy.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\GeneralProduct.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\GeneralProduct.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\GenericPacketMath.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\GenericPacketMath.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\GlobalFunctions.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\GlobalFunctions.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\IO.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\IO.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Map.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Map.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\MapBase.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\MapBase.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\MathFunctions.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\MathFunctions.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Matrix.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Matrix.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\MatrixBase.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\MatrixBase.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\NestByValue.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\NestByValue.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\NoAlias.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\NoAlias.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\NumTraits.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\NumTraits.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\PermutationMatrix.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\PermutationMatrix.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\PlainObjectBase.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\PlainObjectBase.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ProductBase.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ProductBase.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Random.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Random.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Redux.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Redux.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Ref.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Ref.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Replicate.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Replicate.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ReturnByValue.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\ReturnByValue.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Reverse.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Reverse.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Select.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Select.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\SelfAdjointView.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\SelfAdjointView.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\SelfCwiseBinaryOp.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\SelfCwiseBinaryOp.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\SolveTriangular.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\SolveTriangular.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\StableNorm.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\StableNorm.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Stride.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Stride.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Swap.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Swap.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Transpose.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Transpose.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Transpositions.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Transpositions.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\TriangularMatrix.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\TriangularMatrix.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\VectorBlock.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\VectorBlock.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\VectorwiseOp.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\VectorwiseOp.h
+		..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Visitor.h = ..\..\eigen-eigen-10219c95fe65\Eigen\src\Core\Visitor.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample002_ann", "Sample002_ann\Sample002_ann.vcxproj", "{6F1D8F1B-13BD-476B-89FE-DB9143716781}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample003_rand", "Sample003_rand\Sample003_rand.vcxproj", "{579929D8-8C9C-4DA2-A524-574DCE94F231}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F7C57CC-0289-4365-9A00-83F59D0FA1C5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F7C57CC-0289-4365-9A00-83F59D0FA1C5}.Debug|Win32.Build.0 = Debug|Win32
+		{6F7C57CC-0289-4365-9A00-83F59D0FA1C5}.Release|Win32.ActiveCfg = Release|Win32
+		{6F7C57CC-0289-4365-9A00-83F59D0FA1C5}.Release|Win32.Build.0 = Release|Win32
+		{6F1D8F1B-13BD-476B-89FE-DB9143716781}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F1D8F1B-13BD-476B-89FE-DB9143716781}.Debug|Win32.Build.0 = Debug|Win32
+		{6F1D8F1B-13BD-476B-89FE-DB9143716781}.Release|Win32.ActiveCfg = Release|Win32
+		{6F1D8F1B-13BD-476B-89FE-DB9143716781}.Release|Win32.Build.0 = Release|Win32
+		{579929D8-8C9C-4DA2-A524-574DCE94F231}.Debug|Win32.ActiveCfg = Debug|Win32
+		{579929D8-8C9C-4DA2-A524-574DCE94F231}.Debug|Win32.Build.0 = Debug|Win32
+		{579929D8-8C9C-4DA2-A524-574DCE94F231}.Release|Win32.ActiveCfg = Release|Win32
+		{579929D8-8C9C-4DA2-A524-574DCE94F231}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D21252BD-33E8-44BE-842D-E5C8357692C7} = {42AAF250-61F0-406F-A202-DF2AF08ACC2C}
+	EndGlobalSection
+EndGlobal
