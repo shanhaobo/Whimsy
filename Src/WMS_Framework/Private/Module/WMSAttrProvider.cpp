@@ -17,38 +17,38 @@ namespace wms
             }
 
 
-            Void::type type::AttachAllRequest(tIDPairList& outIDPairList, Attr::Manager::ptr inAttrManagerPtr)
+            Void::type type::AttachAllRequest(tRequestInstantItem& ioItem)
             {
                 tRequestList::tSize i;
                 for (i = 0; i < m_RequestList.Size(); ++i)
                 {
                     tRequestItem& tReqItem = m_RequestList[i];
-                    Attr::ptr tAttrPtr = inAttrManagerPtr->GetAttrByIdx(tReqItem.m_AttrID);
+                    Attr::ptr tAttrPtr = ioItem.m_AttrManagerPtr->GetAttrByIdx(tReqItem.m_AttrID);
                     if (::Wiz::IsValidPtr(tAttrPtr))
                     {
                         ID32::typec tID = tAttrPtr->ReceiveRequest(tReqItem.m_RequestPtr);
 
-                        outIDPairList.PushBack(tIDPair(tID, tReqItem.m_AttrID));
+                        ioItem.m_RequestIDList.PushBack(tIDPair(tID, tReqItem.m_AttrID));
                     }
                 }
             }
 
 
-            Void::type type::DetachAllRequest(tIDPairList& outIDPairList, Attr::Manager::ptr inAttrManagerPtr)
+            Void::type type::DetachAllRequest(tRequestInstantItem& ioItem)
             {
                 Size::type i;
-                for (i = 0; i < outIDPairList.Size(); ++i)
+                for (i = 0; i < ioItem.m_RequestIDList.Size(); ++i)
                 {
-                    tIDPair& lIDPair = outIDPairList[i];
+                    tIDPair& lIDPair = ioItem.m_RequestIDList[i];
 
-                    Attr::ptr lAttrPtr = inAttrManagerPtr->GetAttrByIdx(lIDPair.m_AttrID);
+                    Attr::ptr lAttrPtr = ioItem.m_AttrManagerPtr->GetAttrByIdx(lIDPair.m_AttrID);
                     if (::Wiz::IsValidPtr(lAttrPtr))
                     {
                         lAttrPtr->RemoveRequest(lIDPair.m_ReqID);
                     }
                 }
 
-                outIDPairList.Clear();
+                ioItem.m_RequestIDList.Clear();
             }
 
             Bool::type type::IsAttached(Attr::Manager::ptr inAttrManagerPtr) const
@@ -79,7 +79,7 @@ namespace wms
                     /// 1) m_AttrManagerPtr
                     lInstantItem.m_AttrManagerPtr = inAttrManagerPtr;
                     /// 2) m_RequestIDList
-                    AttachAllRequest(lInstantItem.m_RequestIDList, inAttrManagerPtr);
+                    AttachAllRequest(lInstantItem);
                 }
 
                 return Bool::True;
@@ -107,7 +107,7 @@ namespace wms
                 }
 
                 /// Found
-                DetachAllRequest(lIter->m_RequestIDList, inAttrManagerPtr);
+                DetachAllRequest(*lIter);
 
                 /// Remove Instant
                 m_RequestInstantList.Erase(lIter);
@@ -120,7 +120,7 @@ namespace wms
                 {
                     if (::Wiz::IsValidPtr(lIter->m_AttrManagerPtr))
                     {
-                        DetachAllRequest(lIter->m_RequestIDList, lIter->m_AttrManagerPtr);
+                        DetachAllRequest(*lIter);
                     }
                 }
 
@@ -143,10 +143,10 @@ namespace wms
                 {
                     /// Found
                     /// Remove All Requests First;
-                    DetachAllRequest(lIter->m_RequestIDList, inAttrManagerPtr);
+                    DetachAllRequest(*lIter);
 
                     /// Attach All Requests Again;
-                    AttachAllRequest(lIter->m_RequestIDList, inAttrManagerPtr);
+                    AttachAllRequest(*lIter);
 
                     return Bool::True;
                 }
