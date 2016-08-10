@@ -49,12 +49,4 @@
       <UniqueIdentifier>{b58d2874-a492-40fd-b9e3-102fefc0a6ac}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\Src\WMS_Framework\Include\Core\WMSFrmwrkActor.hpp">
-      <Filter>Include\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Src\WMS_Framework\Include\Core\WMSFrmwrkFwdDclr.hpp">
-      <Filter>Include\Core</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>
