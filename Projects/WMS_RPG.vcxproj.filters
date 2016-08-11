@@ -49,4 +49,24 @@
       <UniqueIdentifier>{b58d2874-a492-40fd-b9e3-102fefc0a6ac}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttrDefine.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttrManager.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttrProvider.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_RPG\Include\Core\WMSRPGActor.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_RPG\Include\Core\WMSRPGFwdDclr.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WMS_RPG\Include\Core\WMSRPGObject.hpp">
+      <Filter>Include\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

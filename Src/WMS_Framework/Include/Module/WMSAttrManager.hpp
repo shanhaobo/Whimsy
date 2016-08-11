@@ -11,7 +11,7 @@ namespace wms
     {
         namespace Manager
         {
-            WMS_CLASS: public ::wms::CmpntArray::type
+            WMS_CLASS : public ::wms::CmpntArray::type
             {
             private:
                 typedef ::wms::CmpntArray::type tSuper;
