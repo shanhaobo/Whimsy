@@ -22,22 +22,8 @@ namespace wms
                 virtual ~type();
 
             public:
-                template<class T>
-                T GetValue(::wms::ID32::in inIdx)
-                {
-                    typedef Attr::Type<T>   tValidAttrType;
-                    Attr::ptr lAttrPtr = GetAttrByIdx(inIdx);
-                    if (::Wiz::IsValidPtr(lAttrPtr))
-                    {
-                        tValidAttrType* lAttrTPtr = ::Wiz::Cast::Static<tValidAttrType*>(lAttrPtr);
-                        return lAttrTPtr->GetCurrValue();
-                    }
-
-                    return T(0);
-                }
 
             protected:
-                Attr::ptr GetAttrByIdx(::wms::ID32::in inIdx);
             };
         } /// end of namespace Module
     } /// end of namespace Attr

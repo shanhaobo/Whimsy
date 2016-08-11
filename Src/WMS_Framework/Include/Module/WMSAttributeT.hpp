@@ -29,7 +29,7 @@ namespace wms
             tValue                  m_BaseValue;
             tValue                  m_CurrValue;
 
-        public:
+        protected:
             virtual Void::type Calc(F32::in inCurrTime)
             {
                 if (m_LastTime < inCurrTime)
@@ -49,10 +49,20 @@ namespace wms
             }
 
         public:
-            tValue GetCurrValue()
+            tValue GetCurrValue(F32::in inCurrTime)
             {
-                Calc(m_LastTime + F32::Epsilon);
+                Calc(inCurrTime);
                 return m_CurrValue;
+            }
+
+            Void::type SetBaseValue(tValueIn inValue)
+            {
+                m_BaseValue = inValue;
+            }
+
+            tValue GetBaseValue()
+            {
+                return m_BaseValue;
             }
         };
     } /// end of namespace Attribute
