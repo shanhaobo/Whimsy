@@ -11,16 +11,17 @@ namespace wms
 {
     namespace Attr
     {
-        template<class T>
+        template<class T, class TModifierValue = ::wms::F32::type>
         class Type : public Attr::type
         {
+            typedef Attr::type                              tSuper;
         protected:
             typedef T                                       tValue;
             typedef tValue &                                tValueRef;
             typedef tValueRef                               tValueOut;
             typedef tValueRef const                         tValueIn;
 
-            typedef ::Wiz::TT::If<::Wiz::TT::Is::Same<T, F64::type>::bValue, F64::type, F32::type> tMoidifierValue;
+            typedef TModifierValue                          tMoidifierValue;
 
             typedef Attr::Modifier::Type<tMoidifierValue>   tModifier;
             typedef tModifier*                              tModifierPtr;
@@ -28,6 +29,11 @@ namespace wms
         protected:
             tValue                  m_BaseValue;
             tValue                  m_CurrValue;
+
+            Type(tValueIn inBaseVal) : tSuper(WMS_NEW tModifier()), m_BaseValue(inBaseVal)
+            {
+
+            }
 
         protected:
             virtual Void::type Calc(F32::in inCurrTime)
@@ -37,10 +43,8 @@ namespace wms
                     tModifierPtr lMoidifierPtr = (tModifierPtr)(m_MoidifierPtr);
                     if (::Wiz::IsValidPtr(lMoidifierPtr))
                     {
-                        tMoidifierValue const lResult =
-                            lMoidifierPtr->Calc(
-                                ::Wiz::Cast::Static<tMoidifierValue>(m_BaseValue)
-                                );
+                        tMoidifierValue const lBase     = ::Wiz::Cast::Static<tMoidifierValue>(m_BaseValue);
+                        tMoidifierValue const lResult   = lMoidifierPtr->Calc(lBase);
 
                         m_CurrValue = ::Wiz::Cast::Static<tValue>(lResult);
                         m_LastTime = inCurrTime;

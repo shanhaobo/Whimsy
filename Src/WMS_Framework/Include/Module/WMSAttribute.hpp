@@ -16,7 +16,7 @@ namespace wms
             typedef ::wms::Cmpnt::type                  tSuper;
 
         public:
-            type();
+            type(Attr::Modifier::ptr inMoidifierPtr);
             virtual ~type();
             virtual Void::type Tick(F32::in inDeltaTime);
 

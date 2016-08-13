@@ -16,7 +16,7 @@ namespace wms
                 typedef T                               tValue;
                 typedef tValue &                        tValueRef;
                 typedef tValueRef                       tValueOut;
-                typedef tValueRef const                 tValueIn;
+                typedef tValue const                    tValueIn;
 
             public:
                 virtual Void::type Calc(tValueOut ioCurrVal, tValueIn inBaseValue) = 0;

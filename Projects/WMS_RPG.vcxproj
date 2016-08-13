@@ -15,8 +15,12 @@
     <ClInclude Include="..\Src\WMS_RPG\Include\Core\WMSRPGFwdDclr.hpp" />
     <ClInclude Include="..\Src\WMS_RPG\Include\Core\WMSRPGObject.hpp" />
     <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttrDefine.hpp" />
+    <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttribute.hpp" />
     <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttrManager.hpp" />
     <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttrProvider.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\WMS_RPG\Private\Module\WMSRPGAttribute.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{58F42936-5576-4687-B4D5-2AB5E0EF9681}</ProjectGuid>

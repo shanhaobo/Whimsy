@@ -68,5 +68,13 @@
     <ClInclude Include="..\Src\WMS_RPG\Include\Core\WMSRPGObject.hpp">
       <Filter>Include\Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttribute.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\WMS_RPG\Private\Module\WMSRPGAttribute.cpp">
+      <Filter>Private\Module\Attribute Module</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

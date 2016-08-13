@@ -4,7 +4,7 @@ namespace wms
 {
     namespace Attr
     {
-        type::type() : m_MoidifierPtr(WIZ_NULLPTR)
+        type::type(Attr::Modifier::ptr inMoidifierPtr) : m_MoidifierPtr(inMoidifierPtr), m_LastTime(0)
         {
         }
 

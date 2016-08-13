@@ -4,3 +4,5 @@
 *.opensdf
 /Output
 /Samples/Output
+/*.opendb
+/.vs/Whimsy/v14/*.suo

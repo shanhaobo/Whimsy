@@ -14,17 +14,22 @@ namespace wms
             template<class T>
             class Type : public Modifier::type
             {
+                typedef Modifier::type                  tSuper;
+
             protected:
                 typedef T                               tValue;
                 typedef tValue &                        tValueRef;
                 typedef tValueRef                       tValueOut;
-                typedef tValueRef const                 tValueIn;
+                typedef tValue const                    tValueIn;
 
                 typedef Attr::Request::Type<tValue>     tRequest;
                 typedef tRequest*                       tRequestPtr;
 
             protected:
-                virtual Bool::type CheckBreak(tValueIn inCurrValue) = 0;
+                virtual Bool::type CheckBreak(tValueIn inCurrValue)
+                {
+                    return Bool::False;
+                }
 
             protected:
                 Void::type CalcCurrLayer(tValueOut ioValue, tRequestLayerPtr inLayerPtr, tValueIn inLastBaseVal)
@@ -49,6 +54,11 @@ namespace wms
                 }
 
             public:
+                Type() : tSuper()
+                {
+
+                }
+
                 tValue Calc(tValueIn inBaseVal)
                 {
                     tRequestList::tSize i;

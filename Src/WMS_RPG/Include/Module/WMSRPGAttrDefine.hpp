@@ -17,6 +17,8 @@ namespace wms
                     
                     Shield,
                 };
+
+                WMS_DECLARE(type);
             } /// end of namespace Category
         } /// end of namespace Attr
     } /// end of namespace RPG

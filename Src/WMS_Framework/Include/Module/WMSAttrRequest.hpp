@@ -9,7 +9,7 @@ namespace wms
     {
         namespace Request
         {
-            WMS_CLASS
+            WMS_CLASS : public wms::Obj::General::type
             {
             public:
                 ID32::type      m_ID;

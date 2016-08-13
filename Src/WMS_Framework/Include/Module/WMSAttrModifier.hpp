@@ -10,7 +10,7 @@ namespace wms
     {
         namespace Modifier
         {
-            WMS_CLASS
+            WMS_CLASS : public wms::Obj::General::type
             {
             protected:
                 typedef Array<Attr::Request::ptr>::type     tRequestLayer;
