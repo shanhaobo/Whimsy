@@ -82,12 +82,6 @@ namespace wms
 				WMS_DECLARE(::wms::Obj::type<Allocator::Cmpnt::MetaPrprty::type>);
 			} /// end of namespace Property
         } /// end of namespace Cmpnt
-
-        /// Artificial Neural Network
-        namespace ANN
-        {
-            WMS_DECLARE(::wms::Obj::type<Allocator::ANN::type>);
-        } /// end of namespace ANN
     } /// end of namespace Obj
 
     //////////////////////////////////////////////////////////////////////////

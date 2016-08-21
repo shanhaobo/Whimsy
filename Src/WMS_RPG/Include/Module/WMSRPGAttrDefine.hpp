@@ -14,7 +14,8 @@ namespace wms
                 enum type
                 {
                     Health,
-                    
+                    HealthMax,
+                    Armor,
                     Shield,
                 };
 

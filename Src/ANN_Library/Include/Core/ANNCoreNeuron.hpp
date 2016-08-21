@@ -9,7 +9,7 @@ namespace ann
     namespace Neuron
     {
         template <class IOT, class WeightT = ::wms::F64::type>
-        class type : public ::wms::Obj::ANN::type
+        class type : public ::ann::Obj::type
         {
         protected:
             typedef IOT                                     tIO;

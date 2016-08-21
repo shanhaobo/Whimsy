@@ -41,8 +41,27 @@ namespace wms
                 public:
                     type(tValueIn inBaseVal);
                     virtual ~type();
+
+                public:
+
                 };
             } /// namespace Health
+
+            namespace HealthMax
+            {
+                WMS_CLASS: public RPG::Attr::Type<I32::type>
+                {
+                protected:
+                    typedef public RPG::Attr::Type<I32::type> tSuper;
+
+                public:
+                    type(tValueIn inBaseVal);
+                    virtual ~type();
+
+                public:
+
+                };
+            } /// namespace HealthMax
         } /// end of namespace Attr
     } /// end of namespace RPG
 } /// end of namespace wms

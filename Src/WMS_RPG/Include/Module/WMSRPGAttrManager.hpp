@@ -14,6 +14,8 @@ namespace wms
             {
                 WMS_CLASS : public ::wms::Attr::Manager::type
                 {
+
+
                 };
             } /// end of namespace Manager
         } /// end of namespace Attr

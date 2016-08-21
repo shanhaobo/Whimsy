@@ -10,7 +10,7 @@ namespace ann
         namespace Storage
         {
             template <class WeightT = ::wms::F64::type>
-            class type : public ::wms::Obj::ANN::type
+            class type : public ::ann::Obj::type
             {
             public:
                 typedef WeightT                                 tWeight;
@@ -49,7 +49,7 @@ namespace ann
         namespace Storage
         {
             template <class WeightT = ::wms::F64::type>
-            class type : public ::wms::Obj::ANN::type
+            class type : public ::ann::Obj::type
             {
             protected:
                 typedef ::ann::Neuron::Storage::type<WeightT>       tNeuron;
@@ -125,7 +125,7 @@ namespace ann
         namespace Storage
         {
             template <class WeightT = ::wms::F64::type>
-            class type : public ::wms::Obj::ANN::type
+            class type : public ::ann::Obj::type
             {
             protected:
                 typedef ::ann::Layer::Storage::type<WeightT>            tLayer;

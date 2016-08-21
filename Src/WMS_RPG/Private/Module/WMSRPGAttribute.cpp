@@ -16,6 +16,17 @@ namespace wms
                 {
                 }
             } /// end of namespace Health
+
+            namespace HealthMax
+            {
+                type::type(tValueIn inBaseVal) : tSuper(inBaseVal, RPG::Attr::Category::HealthMax)
+                {
+                }
+
+                type::~type()
+                {
+                }
+            } /// end of namespace HealthMax
         } /// end of namespace Attr
     } /// end of namespace RPG
 } /// end of namespace wms

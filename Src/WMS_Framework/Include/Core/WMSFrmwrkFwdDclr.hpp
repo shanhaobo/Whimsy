@@ -35,6 +35,24 @@ namespace wms
         class type;
         WMS_DECLARE(type);
     } /// end of namespace Attribute
+
+
+    namespace EWMS_OBJ_CAT
+    {
+        namespace Framework
+        {
+            WIZ_ACD(eWOC_General);
+        } /// end of namespace Framework
+
+        namespace Allocator
+        {
+            namespace Framework
+            {
+                typedef ::Wiz::Allocator::Categorized<EWMS_OBJ_CAT::Framework::eWOC_General>::Type   type;
+            } /// end of namespace Framework
+        } /// end of namespace Allocator
+    } /// end of namespace EWMS_OBJ_CAT
+
 } /// end of namespace wms
 
 #endif /// __WHIMSY_FRAMEWORK_COMPONENT_HPP__
