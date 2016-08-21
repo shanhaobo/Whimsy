@@ -71,9 +71,18 @@
     <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttribute.hpp">
       <Filter>Include\Module\Attribute Module</Filter>
     </ClInclude>
+    <ClInclude Include="..\Src\WMS_RPG\Include\Module\WMSRPGAttrMgrAgent.hpp">
+      <Filter>Include\Module\Attribute Module</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Src\WMS_RPG\Private\Module\WMSRPGAttribute.cpp">
+      <Filter>Private\Module\Attribute Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_RPG\Private\Module\WMSRPGAttrManager.cpp">
+      <Filter>Private\Module\Attribute Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WMS_RPG\Private\Module\WMSRPGAttrMgrAgent.cpp">
       <Filter>Private\Module\Attribute Module</Filter>
     </ClCompile>
   </ItemGroup>

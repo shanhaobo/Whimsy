@@ -43,9 +43,6 @@ namespace wms
                 public:
                     type(tValueIn inBaseVal);
                     virtual ~type();
-
-                public:
-
                 };
             } /// namespace Health
 

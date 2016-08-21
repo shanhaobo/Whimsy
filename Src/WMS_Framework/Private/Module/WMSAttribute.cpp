@@ -4,7 +4,10 @@ namespace wms
 {
     namespace Attr
     {
-        type::type(Attr::Modifier::ptr inModifierPtr, Bool::type inVariable) : m_ModifierPtr(inModifierPtr), m_Variable(inVariable)
+        type::type(Attr::Modifier::ptr inModifierPtr, Bool::type inVariable)
+            : m_ModifierPtr(inModifierPtr)
+            , m_BeModified(Bool::True)
+            , m_Variable(inVariable)
         {
         }
 
