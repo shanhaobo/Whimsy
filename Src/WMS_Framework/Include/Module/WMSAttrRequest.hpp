@@ -9,11 +9,12 @@ namespace wms
     {
         namespace Request
         {
-            WMS_CLASS : public wms::Obj::General::type
+            WMS_CLASS : public wms::Obj::Framework::Attribute::type
             {
             public:
                 ID32::type      m_ID;
                 ID32::type      m_LayerID;
+                Bool::type      m_Disposable;
 
             public:
                 virtual Void::type BreakCallBack() {}

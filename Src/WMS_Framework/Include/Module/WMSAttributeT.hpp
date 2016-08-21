@@ -30,24 +30,30 @@ namespace wms
             tValue                  m_BaseValue;
             tValue                  m_CurrValue;
 
-            Type(tValueIn inBaseVal) : tSuper(WMS_NEW tModifier()), m_BaseValue(inBaseVal)
+            Type(tValueIn inBaseVal, Bool::type inVariable = Bool::False)
+                : tSuper(WMS_NEW tModifier(), inVariable)
+                , m_BaseValue(inBaseVal)
             {
-
             }
 
         protected:
-            virtual Void::type Calc(F32::in inCurrTime)
+            virtual Void::type Calc()
             {
-                if (m_LastTime < inCurrTime)
+                if (m_BeModified)
                 {
-                    tModifierPtr lMoidifierPtr = (tModifierPtr)(m_MoidifierPtr);
-                    if (::Wiz::IsValidPtr(lMoidifierPtr))
+                    tModifierPtr lModifierPtr = (tModifierPtr)(m_ModifierPtr);
+                    if (::Wiz::IsValidPtr(lModifierPtr))
                     {
                         tMoidifierValue const lBase     = ::Wiz::Cast::Static<tMoidifierValue>(m_BaseValue);
-                        tMoidifierValue const lResult   = lMoidifierPtr->Calc(lBase);
+                        tMoidifierValue const lResult   = lModifierPtr->Calc(lBase);
 
-                        m_CurrValue = ::Wiz::Cast::Static<tValue>(lResult);
-                        m_LastTime = inCurrTime;
+                        m_CurrValue  = ::Wiz::Cast::Static<tValue>(lResult);
+                        m_BeModified = Bool::False;
+
+                        if (m_Variable)
+                        {
+                            m_BaseValue = m_CurrValue;
+                        }
                     }
                 }
             }
@@ -55,13 +61,19 @@ namespace wms
         public:
             tValue GetCurrValue(F32::in inCurrTime)
             {
-                Calc(inCurrTime);
+                Calc();
                 return m_CurrValue;
             }
 
             Void::type SetBaseValue(tValueIn inValue)
             {
-                m_BaseValue = inValue;
+                m_BaseValue     = inValue;
+                m_BeModified    = Bool::True;
+
+                if (m_Variable)
+                {
+                    m_CurrValue = m_BaseValue;
+                }
             }
 
             tValue GetBaseValue()

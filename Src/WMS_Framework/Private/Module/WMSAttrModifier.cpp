@@ -6,7 +6,6 @@ namespace wms
     {
         namespace Modifier
         {
-
             type::type() : m_RequestID(0)
             {
             }
@@ -19,37 +18,37 @@ namespace wms
             /// 创建LAYER
             type::tRequestLayerPtr type::FindOrCreateRequestLayer(ID32::in inLayerID)
             {
-                tRequestList::tSize i;
+                tRequestLayerList::tSize i;
 
-                for (i = 0; i < m_RequestList.Size(); ++i)
+                for (i = 0; i < m_RequestLayerList.Size(); ++i)
                 {
-                    if (m_RequestList[i].LayerID == inLayerID)
+                    if (m_RequestLayerList[i].LayerID == inLayerID)
                     {
-                        return m_RequestList[i].LayerPtr;
+                        return m_RequestLayerList[i].LayerPtr;
                     }
                 }
 
                 ///未找到
-                tRequestLayerPtr lResultPtr = WMS_NEW_T(tRequestLayer, EWMS_OBJ_CAT::eWOC_General);
+                tRequestLayerPtr lResultPtr = WMS_NEW_T(tRequestLayer, EWMS_OBJ_CAT::Framework::eWOC_Attribute);
                 if (::Wiz::IsValidPtr(lResultPtr))
                 {
-                    m_RequestList.PushBack(tRequestLayerItem(inLayerID, lResultPtr));
-                    if (m_RequestList.Size() >= 2)
+                    m_RequestLayerList.PushBack(tRequestLayerItem(inLayerID, lResultPtr));
+                    if (m_RequestLayerList.Size() >= 2)
                     {
-                        tRequestLayer::tSize const tLastIdx = m_RequestList.Size() - 1;
+                        tRequestLayer::tSize const tLastIdx = m_RequestLayerList.Size() - 1;
 
                         /// Sort()
                         /// 从倒数第二个开始与倒数第一个(inLayerID, tResultPtr)比较
                         for (i = tLastIdx - 1; i >= 0; ++i)
                         {
                             /// 大的排到后面去
-                            if (m_RequestList[i].LayerID > inLayerID)
+                            if (m_RequestLayerList[i].LayerID > inLayerID)
                             {
-                                m_RequestList[i + 1].LayerID  = m_RequestList[i].LayerID;
-                                m_RequestList[i + 1].LayerPtr = m_RequestList[i].LayerPtr;
+                                m_RequestLayerList[i + 1].LayerID  = m_RequestLayerList[i].LayerID;
+                                m_RequestLayerList[i + 1].LayerPtr = m_RequestLayerList[i].LayerPtr;
 
-                                m_RequestList[i].LayerID      = inLayerID;
-                                m_RequestList[i].LayerPtr     = lResultPtr;
+                                m_RequestLayerList[i].LayerID      = inLayerID;
+                                m_RequestLayerList[i].LayerPtr     = lResultPtr;
                             }
                         }
                     }
@@ -60,10 +59,22 @@ namespace wms
 
             ID32::type type::ReceiveRequest(Attr::Request::ptr inNewReqPtr)
             {
-                tRequestLayerPtr lArrayPtr = FindOrCreateRequestLayer(inNewReqPtr->m_LayerID);
-                if (::Wiz::IsValidPtr(lArrayPtr))
+                tRequestLayer::tSize    i;
+                tRequestLayerPtr        lLayerPtr = FindOrCreateRequestLayer(inNewReqPtr->m_LayerID);
+                if (::Wiz::IsValidPtr(lLayerPtr))
                 {
-                    lArrayPtr->PushBack(inNewReqPtr);
+                    for (i = 0; i < lLayerPtr->Size(); ++i)
+                    {
+                        if (::Wiz::NotValidPtr((*lLayerPtr)[i]))
+                        {
+                            (*lLayerPtr)[i] = inNewReqPtr;
+                            break;
+                        }
+                    }
+                    if (i == lLayerPtr->Size())
+                    {
+                        lLayerPtr->PushBack(inNewReqPtr);
+                    }
                     inNewReqPtr->m_ID = GenReqID();
                     return inNewReqPtr->m_ID;
                 }
@@ -71,21 +82,20 @@ namespace wms
                 return ID32::Invalid;
             }
 
-
             ID32::type type::GenReqID()
             {
                 return m_RequestID++;
             }
 
-
-            Void::type type::RemoveRequest(ID32::in inReqID)
+            Bool::type type::RemoveRequest(ID32::in inReqID)
             {
-                tRequestList::tSize     i, j;
+                tRequestLayerList::tSize     i;
+                tRequestLayer::tSize    j;
                 tRequestLayerPtr        lLayerPtr;
 
-                for (i = 0; i < m_RequestList.Size(); ++i)
+                for (i = 0; i < m_RequestLayerList.Size(); ++i)
                 {
-                    lLayerPtr = m_RequestList[i].LayerPtr;
+                    lLayerPtr = m_RequestLayerList[i].LayerPtr;
                     if (::Wiz::IsValidPtr(lLayerPtr))
                     {
                         for (j = 0; j < lLayerPtr->Size(); ++j)
@@ -107,16 +117,18 @@ namespace wms
 
                                     lLayerPtr->PopBack();
                                 }
-                                return;
+                                return Bool::True;
                             }
                         }
                     }
                 }
+
+                return Bool::False;
             }
 
-            Void::type type::RemoveRequest(tRequestLayerPtr inLayerPtr, Attr::Request::ptr inReqPtr)
+            Bool::type type::RemoveRequest(tRequestLayerPtr inLayerPtr, Attr::Request::ptr inReqPtr)
             {
-                if (inLayerPtr->Size() >= 1)
+                if (inLayerPtr->Size() > 0)
                 {
                     tRequestLayer::tSize const lReqLastIdx  = inLayerPtr->Size() - 1;
 
@@ -134,6 +146,24 @@ namespace wms
                     if ((i < lReqLastIdx) || (inReqPtr == (*inLayerPtr)[lReqLastIdx]))
                     {
                         inLayerPtr->PopBack();
+                        return Bool::True;
+                    }
+                }
+
+                return Bool::False;
+            }
+
+            Void::type type::ClearAllRequests()
+            {
+                tRequestLayerList::tSize     i;
+                tRequestLayerPtr        lLayerPtr;
+
+                for (i = 0; i < m_RequestLayerList.Size(); ++i)
+                {
+                    lLayerPtr = m_RequestLayerList[i].LayerPtr;
+                    if (::Wiz::IsValidPtr(lLayerPtr))
+                    {
+                        lLayerPtr->Clear();
                     }
                 }
             }

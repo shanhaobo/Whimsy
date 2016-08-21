@@ -16,11 +16,9 @@ namespace wms
             typedef ::wms::Cmpnt::type                  tSuper;
 
         public:
-            type(Attr::Modifier::ptr inMoidifierPtr);
+            type(Attr::Modifier::ptr inModifierPtr, Bool::type inVariable = Bool::False);
             virtual ~type();
             virtual Void::type Tick(F32::in inDeltaTime);
-
-            virtual Void::type Calc(F32::in inDeltaTime) = WIZ_NULLPTR;
 
             ID32::type ReceiveRequest(Attr::Request::ptr);
             Void::type RemoveRequest(ID32::in);
@@ -31,9 +29,14 @@ namespace wms
             virtual Void::type GetCurrValue(Void::ptr outValue, F32::in inTime) = WIZ_NULLPTR;
 
         protected:
-            Attr::Modifier::ptr m_MoidifierPtr;
+            virtual Void::type Calc();
 
-            F32::type           m_LastTime;
+        protected:
+            Attr::Modifier::ptr m_ModifierPtr;
+
+            Bool::type          m_BeModified;
+            Bool::type          m_Variable;     /// Bool::True   : example : HPMax
+                                                /// Bool::False  : example : HP
         };
     } /// end of namespace Attribute
 } /// end of namespace wms

@@ -23,7 +23,7 @@ namespace wms
 
                     }
                 };
-                typedef Array<tRequestItem>::type           tRequestList;
+                typedef Array<tRequestItem>::type           tRequestLayerList;
 
                 /// ÐèÇóÊµÀý
                 struct tRequestInstantItem
@@ -60,7 +60,7 @@ namespace wms
 
                     tRequestInstantItem();
 
-                    Void::type AttachTo(Attr::Manager::ptr, tRequestList const &);
+                    Void::type AttachTo(Attr::Manager::ptr, tRequestLayerList const &);
                     Void::type Detach();
                 };
                 typedef List<tRequestInstantItem>::type    tRequestInstantList;
@@ -77,7 +77,7 @@ namespace wms
                 Bool::type Reattach(Attr::Manager::ptr);
 
             protected:
-                tRequestList                m_RequestList;
+                tRequestLayerList                m_RequestList;
                 tRequestInstantList         m_RequestInstantList;
             };
         } /// end of namespace Provider

@@ -25,11 +25,11 @@ namespace wms
                 return m_RequestIDList == inOther.m_RequestIDList;
             }
 
-            Void::type type::tRequestInstantItem::AttachTo(Attr::Manager::ptr inAttrManagerPtr, tRequestList const & inReqList)
+            Void::type type::tRequestInstantItem::AttachTo(Attr::Manager::ptr inAttrManagerPtr, tRequestLayerList const & inReqList)
             {
                 m_AttrManagerPtr = inAttrManagerPtr;
 
-                tRequestList::tSize i;
+                tRequestLayerList::tSize i;
                 for (i = 0; i < inReqList.Size(); ++i)
                 {
                     tRequestItem const & tReqItem = inReqList[i];

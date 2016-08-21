@@ -8,7 +8,7 @@ namespace wms
         {
             namespace Health
             {
-                type::type(tValueIn inBaseVal) : tSuper(inBaseVal, RPG::Attr::Category::Health)
+                type::type(tValueIn inBaseVal) : tSuper(inBaseVal, RPG::Attr::Category::Health, Bool::True)
                 {
                 }
 

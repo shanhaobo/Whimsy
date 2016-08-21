@@ -6,6 +6,46 @@
 
 namespace wms
 {
+    namespace EWMS_OBJ_CAT
+    {
+        namespace Framework
+        {
+            WIZ_ACD(eWOC_General);
+
+            WIZ_ACD(eWOC_Attribute);
+        } /// end of namespace Framework
+    } /// end of namespace EWMS_OBJ_CAT
+
+    namespace Allocator
+    {
+        namespace Framework
+        {
+            namespace General
+            {
+                typedef ::Wiz::Allocator::Categorized<EWMS_OBJ_CAT::Framework::eWOC_General>::Type   type;
+            }
+            namespace Attribute
+            {
+                typedef ::Wiz::Allocator::Categorized<EWMS_OBJ_CAT::Framework::eWOC_Attribute>::Type   type;
+            }
+        } /// end of namespace Framework
+    } /// end of namespace Allocator
+
+    namespace Obj
+    {
+        namespace Framework
+        {
+            namespace General
+            {
+                WMS_DECLARE(::wms::Obj::type<::wms::Allocator::Framework::General::type>);
+            }
+            namespace Attribute
+            {
+                WMS_DECLARE(::wms::Obj::type<::wms::Allocator::Framework::Attribute::type>);
+            }
+        } /// end of namespace Framework
+    } /// end of namespace ANN
+
     namespace Attr
     {
         namespace Module
@@ -35,24 +75,6 @@ namespace wms
         class type;
         WMS_DECLARE(type);
     } /// end of namespace Attribute
-
-
-    namespace EWMS_OBJ_CAT
-    {
-        namespace Framework
-        {
-            WIZ_ACD(eWOC_General);
-        } /// end of namespace Framework
-
-        namespace Allocator
-        {
-            namespace Framework
-            {
-                typedef ::Wiz::Allocator::Categorized<EWMS_OBJ_CAT::Framework::eWOC_General>::Type   type;
-            } /// end of namespace Framework
-        } /// end of namespace Allocator
-    } /// end of namespace EWMS_OBJ_CAT
-
 } /// end of namespace wms
 
 #endif /// __WHIMSY_FRAMEWORK_COMPONENT_HPP__

@@ -26,12 +26,6 @@ namespace wms
                 typedef tRequest*                       tRequestPtr;
 
             protected:
-                virtual Bool::type CheckBreak(tValueIn inCurrValue)
-                {
-                    return Bool::False;
-                }
-
-            protected:
                 Void::type CalcCurrLayer(tValueOut ioValue, tRequestLayerPtr inLayerPtr, tValueIn inLastBaseVal)
                 {
                     if (::Wiz::IsValidPtr(inLayerPtr))
@@ -43,10 +37,9 @@ namespace wms
                             if (::Wiz::IsValidPtr(lReqPtr))
                             {
                                 lReqPtr->Calc(ioValue, inLastBaseVal);
-                                if (CheckBreak(ioValue))
+                                if (lReqPtr->m_Disposable)
                                 {
-                                    lReqPtr->BreakCallBack();
-                                    break;
+                                    (*inLayerPtr)[i] = WIZ_NULLPTR;
                                 }
                             }
                         }
@@ -59,16 +52,16 @@ namespace wms
 
                 }
 
-                tValue Calc(tValueIn inBaseVal)
+                virtual tValue Calc(tValueIn inBaseVal)
                 {
-                    tRequestList::tSize i;
+                    tRequestLayerList::tSize i;
 
-                    tValue              lBaseVal   = inBaseVal;
+                    tValue              lBaseVal = inBaseVal;
                     tValue              lResultVal = inBaseVal;
 
-                    for (i = 0; i < m_RequestList.Size(); ++i)
+                    for (i = 0; i < m_RequestLayerList.Size(); ++i)
                     {
-                        CalcCurrLayer(lResultVal, m_RequestList[i].LayerPtr, lBaseVal);
+                        CalcCurrLayer(lResultVal, m_RequestLayerList[i].LayerPtr, lBaseVal);
 
                         lBaseVal = lResultVal;
                     }

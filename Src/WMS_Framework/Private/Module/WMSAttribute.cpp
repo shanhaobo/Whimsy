@@ -4,7 +4,7 @@ namespace wms
 {
     namespace Attr
     {
-        type::type(Attr::Modifier::ptr inMoidifierPtr) : m_MoidifierPtr(inMoidifierPtr), m_LastTime(0)
+        type::type(Attr::Modifier::ptr inModifierPtr, Bool::type inVariable) : m_ModifierPtr(inModifierPtr), m_Variable(inVariable)
         {
         }
 
@@ -19,19 +19,30 @@ namespace wms
 
         ID32::type type::ReceiveRequest(Attr::Request::ptr inReqPtr)
         {
-            if (::Wiz::IsValidPtr(m_MoidifierPtr) && ::Wiz::IsValidPtr(inReqPtr))
+            ID32::type tResultID(ID32::Invalid);
+
+            if (::Wiz::IsValidPtr(m_ModifierPtr) && ::Wiz::IsValidPtr(inReqPtr))
             {
-                return m_MoidifierPtr->ReceiveRequest(inReqPtr);
+                tResultID = m_ModifierPtr->ReceiveRequest(inReqPtr);
+                if (tResultID != ID32::Invalid)
+                {
+                    m_BeModified = Bool::True;
+
+                    return tResultID;
+                }
             }
 
-            return ID32::Invalid;
+            return tResultID;
         }
 
         Void::type type::RemoveRequest(ID32::in inReqID)
         {
-            if (::Wiz::IsValidPtr(m_MoidifierPtr) && (inReqID != ID32::Invalid))
+            if (::Wiz::IsValidPtr(m_ModifierPtr) && (inReqID != ID32::Invalid))
             {
-                m_MoidifierPtr->RemoveRequest(inReqID);
+                if (m_ModifierPtr->RemoveRequest(inReqID))
+                {
+                    m_BeModified = Bool::True;
+                }
             }
         }
     } /// end of namespace Attr

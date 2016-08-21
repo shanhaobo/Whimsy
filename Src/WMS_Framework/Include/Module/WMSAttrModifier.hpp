@@ -10,7 +10,7 @@ namespace wms
     {
         namespace Modifier
         {
-            WMS_CLASS : public wms::Obj::General::type
+            WMS_CLASS : public wms::Obj::Framework::Attribute::type
             {
             protected:
                 typedef Array<Attr::Request::ptr>::type     tRequestLayer;
@@ -26,23 +26,25 @@ namespace wms
 
                     }
                 };
-                typedef Array<tRequestLayerItem>::type       tRequestList;
+                typedef Array<tRequestLayerItem>::type       tRequestLayerList;
 
             public:
                 type();
                 virtual ~type();
 
                 ID32::type ReceiveRequest(Attr::Request::ptr);
-                Void::type RemoveRequest(ID32::in);
+                Bool::type RemoveRequest(ID32::in);
+
+                Void::type ClearAllRequests();
 
             protected:
                 tRequestLayerPtr FindOrCreateRequestLayer(ID32::in inLayerID);
-                Void::type RemoveRequest(tRequestLayerPtr, Attr::Request::ptr);
+                Bool::type RemoveRequest(tRequestLayerPtr, Attr::Request::ptr);
 
                 ID32::type GenReqID();
 
             protected:
-                tRequestList                m_RequestList;
+                tRequestLayerList                m_RequestLayerList;
 
                 ID32::type                  m_RequestID;
             };

@@ -20,7 +20,9 @@ namespace wms
             protected:
                 RPG::Attr::Category::type   m_Category;
 
-                Type(tValueIn inBaseVal, RPG::Attr::Category::in inCat) : tSuper(inBaseVal), m_Category(inCat)
+                Type(tValueIn inBaseVal, RPG::Attr::Category::in inCat, Bool::type inVariable = Bool::False)
+                    : tSuper(inBaseVal, inVariable)
+                    , m_Category(inCat)
                 {
 
                 }
