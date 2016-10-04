@@ -11,7 +11,7 @@ namespace rkk
 {
     namespace RenderPass
     {
-		WMS_CLASS: public :: wms::Cmpnt::type
+        WMS_CLASS: public ::wms::Cmpnt::type
         {
         public:
             type();
@@ -20,7 +20,7 @@ namespace rkk
         public:
             RenderState::ptr					m_RenderStagePtr;
 
-			RenderTarget::ptr					m_RenderTargetPtr;
+            RenderTarget::ptr					m_RenderTargetPtr;
 
             RenderShader::VertexShader::ptr		m_VertexShaderPtr;
             RenderShader::PixelShader::ptr		m_PixelShaderPtr;
