@@ -7,8 +7,8 @@ namespace Wiz
 {
     namespace LinkList
     {
-        template<class ElementT>
-        class Type
+        template<class ElementT, class BaseT>
+        class Type : public BaseT
         {
             //////////////////////////////////////////////////////////////////////////
 
@@ -27,6 +27,10 @@ namespace Wiz
             {}
         public:
 
+
+        protected:
+
+            tElementPtr     m_FirstPtr;
         };
     } /// end of namespace LinkList
 } /// end of namespace Wiz
